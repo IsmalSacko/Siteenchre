@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Achat{% endblock %}
+
+{% block body %}
+    <div class="container mt-5 mb-3">
+        <div class="jumbotron">
+            <h1 class="bg-dark text-white">Création de l'achat</h1>
+
+            {{ include('achat/_form.html.twig') }}
+
+            <a href="{{ path('achat_index') }}" class="btn btn-primary">retourner à la liste d'achat</a>
+            <div >
+    </div>
+{% endblock %}
